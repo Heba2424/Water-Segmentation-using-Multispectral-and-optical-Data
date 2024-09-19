@@ -1,4 +1,7 @@
-flask
-torch
+Flask
+Torch
 torchvision
-pillow
+matplotlib
+Pillow
+numpy
+segmentation-models-pytorch
