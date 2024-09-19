@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Segmentation Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        
+        img {
+            margin: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Segmentation Result</h1>
-    <div>
-        <h2>Original Image</h2>
-        <img src="{{ url_for('static', filename=original_image) }}" alt="Original Image">
-    </div>
-    <div>
-        <h2>Predicted Segmentation</h2>
-        <img src="{{ url_for('static', filename=prediction_image) }}" alt="Prediction Image">
-    </div>
-    <a href="/">Back to Home</a>
+    <img src="{{ image_url }}" alt="Prediction">
+    <br>
+    <a href="/">Upload another image</a>
 </body>
 
 </html>
