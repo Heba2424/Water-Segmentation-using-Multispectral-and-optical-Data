@@ -4,16 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segmentation Model</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Segmentation Model Deployment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Upload Image for Segmentation</h1>
-    <form action="/predict" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept="image/*" required>
-        <button type="submit">Upload and Predict</button>
-    </form>
+    <div class="container">
+        <h1>Upload Image for Segmentation</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/tiff, image/png" required>
+            <br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
 </body>
 
 </html>
