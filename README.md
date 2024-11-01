@@ -47,6 +47,9 @@ To run this project, you'll need to install the required packages. You can do th
 pip install -r requirements.txt
 ```
 
+## Usage
+*Instructions for usage go here.*
+
 ## Training
 To train the model, run the following command in your terminal:
 ```bash
@@ -70,6 +73,7 @@ Test Dice Score: 0.8970
 Test F1 Score: 0.8970
 Test Accuracy: 0.9530
 ```
+![App Result](app%20result.png)
 ## Deployment
 To deploy the model as a web application using Flask, follow these steps:
 
