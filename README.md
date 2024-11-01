@@ -139,7 +139,7 @@ To deploy the model as a web application using Flask, follow these steps:
     app.run(debug=True)
 
    ```
-   3. **Run the Flask app: In your terminal, run**
+3. **Run the Flask app: In your terminal, run**
    ```bash
    python app.py
    ```
